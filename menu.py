@@ -13,9 +13,6 @@ class RestaurantMenu:
             return True
         return False
 
-
-  def main():
-
   def display_menu(self):
        print("Menu Items:")
        for item, price in self.menu_items.items():
