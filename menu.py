@@ -21,6 +21,12 @@ class RestaurantMenu:
        for item, price in self.menu_items.items():
           print (f"{item}: ${price:.2f}")  
 
+def update_price(self, name, new_price):
+       if name in self.menu_items:
+          self.menu_items[name] = new_price
+          return True
+       return False
+       
 def main():
 
   menu = RestaurantMenu()
